@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact Me</title>
+</head>
+<body bgColor="GhostWhite" text = "black" vlink="blue">
+    <h3>My Contact Details</h3>
+    <p>Address: BH2 5JT</p>
+        <p style="margin-left:60px;">England, United Kingdom</p><!--margin-left attribute indents the text depending on the number of pixels stated -->
+    <p>Mobile Number: +447594553206</p>
+    <p>Email Address: maryamkemi@gmail.com</p>
+    <hr>
+    <form action="mailto: maryamkemi@gmail.com" method="post" enctype="text/plain"> <!-- creates a form that can be interacted with by the page visitors,
+                                                                         post means the data collected within the code below is goint to be transferred to the email client
+                                                                         stated within the action attribute, the action states what should happen when the submit button is clicked,
+                                                                         enctype states that the data in the form is in plain text format so the extra signs and symbols won't be
+                                                                         added when the data is transferred to the mail client.-->
+        <label>Your Name:</label>
+        <input type="text" name="Name" value=""><br> <!-- creates a textbox for the user to enter their name-->
+        <label>Your Email:</label>
+        <input type="email" name="Email" value=""><br>
+        <label>Your Message:</label><br>
+        <textarea name="Message" rows="10" cols="30"></textarea><br> <!-- creates a textbox for a message to be typed in, rows determine how tall the text area should be,
+                                                            cols determines how wide your text area should be-->
+        <input type="submit" name="">
+    </form>
+</body>
+</html>
